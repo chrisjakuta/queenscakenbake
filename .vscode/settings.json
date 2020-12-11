@@ -1,0 +1,35 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "/home/jakuta/nerd-rich-venv/bin/python",
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "workbench.settings.editor": "json",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+    ],
+    "workbench.colorCustomizations": {},
+    "python.terminal.activateEnvironment": true,
+    "eslint.packageManager": "yarn",
+    "python.linting.enabled": true,
+    "python.linting.pycodestyleEnabled": false,
+    // "python.pipenvPath": "/Users/prosoft/prosoft/bin/pipenv",
+    "python.linting.pycodestyleArgs": [
+        "--ignore=E501",
+    ],
+    "scm.defaultViewMode": "tree",
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": true,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test*.py"
+    ],
+    "javascript.format.semicolons": "insert"
+}
