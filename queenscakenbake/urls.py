@@ -50,7 +50,7 @@ react_url_patterns = [
 api_endpoint_patterns = []
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('court/', admin.site.urls),
     path('api/', include('rest_framework.urls')),
     path('authtoken/', views.obtain_auth_token),
     path('salesman/', include('salesman.urls')),
