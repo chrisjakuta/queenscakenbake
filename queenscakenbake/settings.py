@@ -69,7 +69,7 @@ ROOT_URLCONF = 'queenscakenbake.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'material-kit-react-master')],
+        'DIRS': [os.path.join(BASE_DIR, 'frontend')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -213,7 +213,7 @@ AWS_S3_FILE_OVERWRITE = False
 AWS_S3_BUCKET_NAME_STATIC = os.getenv('AWS_S3_BUCKET_NAME_STATIC')
 AWS_S3_BUCKET_AUTH_STATIC = False
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'material-kit-react-master', 'build', 'static'),
+    os.path.join(BASE_DIR, 'frontend', 'build', 'static'),
 ]
 STATICFILES_STORAGE = 'django_s3_storage.storage.ManifestStaticS3Storage'
 DEFAULT_FILE_STORAGE = 'django_s3_storage.storage.S3Storage'
