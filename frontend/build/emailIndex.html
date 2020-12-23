@@ -1,0 +1,16 @@
+{% load react %}
+<html>
+    <head>...</head>
+
+    <body>
+        <nav>
+            {% react_render component="Menu" props=menu_data %}
+        </nav>
+    </body>
+
+    <!-- Your js includes should be included here, example:
+    <script type="text/javascript" src="/static/myapp/js/react-and-react-dom.js"></script>
+    <script type="text/javascript" src="/static/myapp/js/my-components.js"></script>
+    -->
+    {% react_print %}
+</html>
